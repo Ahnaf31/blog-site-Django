@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/post-details.css"%}">
+
+{% endblock %}
+
+{% block content %}
+<section id="summary"> 
+<h2>Post Title</h2>
+<article>
+    <img src="{%static "blog/images/ahn.jpg"%}" alt="Post Title">
+    <address>By Maximilian</address>
+    <div>
+        Last update on <time>10th September</time>
+    </div>
+</article>
+</section>
+
+<main>
+ <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eum quam unde. Earum voluptates, laudantium dolore neque recusandae dolorum adipisci fugit labore vitae quas soluta eum exercitationem dolor magnam rem?
+ </p>
+ <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eum quam unde. Earum voluptates, laudantium dolore neque recusandae dolorum adipisci fugit labore vitae quas soluta eum exercitationem dolor magnam rem?
+ </p>
+ <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eum quam unde. Earum voluptates, laudantium dolore neque recusandae dolorum adipisci fugit labore vitae quas soluta eum exercitationem dolor magnam rem?
+ </p>
+
+</main>
+
+{% endblock %}
